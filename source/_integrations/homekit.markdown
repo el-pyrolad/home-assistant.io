@@ -286,7 +286,14 @@ homekit:
 
 After Home Assistant has started, the entities (depending on the filter) are exposed to HomeKit if they are [supported](#supported-integrations). To add them:
 
+
+
 1. Open the Home Assistant frontend. A new card will display the pairing QR code and the `pin code` as seen in the example below. Note: If pin code is not displayed, check "Notifications" (the bell icon) in the lower-left of the Home Assistant UI.
+
+**IMPORTANT!** The QR code will appear *only once*!
+Take a screenshot of the QR code *and* the PIN code! (You will need these codes when adding new devices).
+If you do not take note of these codes, you will have no way to add/pair new devices to this Home Assistant Bridge in the future.
+
 2. Open the Apple `Home` app.
 3. Click `Add Accessory`, then scan the QR code or select `Don't Have a Code or Can't Scan?` and choose the `Home Assistant Bridge`.
 4. Confirm that you are adding an `Uncertified Accessory` by clicking on `Add Anyway`.
@@ -295,6 +302,8 @@ After Home Assistant has started, the entities (depending on the filter) are exp
 7. The `Home Assistant Bridge` and the Accessories should now be listed in the `Home` app.
 
 After the setup is completed, you should be able to control your Home Assistant integrations through Apple's Home and Siri.
+
+**REMINDER!** THE QR CODE IS UNIQUELY GENERATED FOR YOUR SPECIFIC `Home Assistant Bridge` AND WILL APPEAR *ONLY ONCE!* Take a screenshot of the QR code *and* the PIN code!
 
 <p class='img'>
   <img src='/images/screenshots/homekit_pairing_example.png' />
